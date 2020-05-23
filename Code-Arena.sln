@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Code-Arena", "Code-Arena.njsproj", "{BFFB7FAD-395B-4DBC-B9A9-AEBCDC808C0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFFB7FAD-395B-4DBC-B9A9-AEBCDC808C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFB7FAD-395B-4DBC-B9A9-AEBCDC808C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFB7FAD-395B-4DBC-B9A9-AEBCDC808C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFB7FAD-395B-4DBC-B9A9-AEBCDC808C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0459950-6C71-46BE-B55A-C6BE75B054A5}
+	EndGlobalSection
+EndGlobal

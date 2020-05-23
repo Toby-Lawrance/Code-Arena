@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="js/paper-full.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <canvas id="gameCanvas" width="640" height = "480" style="border:1px solid #000000;"></canvas>
+    <script type="text/paperscript" src="js/gameRender.js" canvas="gameCanvas"></script>
+  </body>
+</html>
