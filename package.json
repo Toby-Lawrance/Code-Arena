@@ -21,7 +21,8 @@
     "morgan": "^1.7.0",
     "paper": "^0.12.4",
     "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.0"
+    "cookie-parser": "^1.4.0",
+	"serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "@types/debug": "0.0.30",
