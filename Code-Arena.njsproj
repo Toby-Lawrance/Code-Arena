@@ -13,7 +13,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bffb7fad-395b-4dbc-b9a9-aebcdc808c0e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>app.ts</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,19 +34,16 @@
     <None Include="app.ts" />
     <None Include="routes\index.ts" />
     <None Include="routes\user.ts" />
-    <Content Include="app.js" />
-    <Content Include="BattleRobot.js" />
-    <Content Include="Bout.js" />
+    <Content Include="BattleRobot.ts" />
+    <Content Include="Bout.ts" />
     <Content Include="public\js\gameRender.js" />
     <Content Include="public\js\paper-core.js" />
     <Content Include="public\js\paper-core.min.js" />
     <Content Include="public\js\paper-full.js" />
     <Content Include="public\js\paper-full.min.js" />
-    <Content Include="Robot.js" />
-    <Content Include="RobotAPI.js" />
-    <Content Include="RobotComponents.js" />
-    <Content Include="routes\index.js" />
-    <Content Include="routes\users.js" />
+    <Content Include="Robot.ts" />
+    <Content Include="RobotAPI.ts" />
+    <Content Include="RobotComponents.ts" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
