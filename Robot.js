@@ -1,23 +1,17 @@
-import * as components from "./RobotComponents.js";
-import Chassis = components.Chassis;
-import Armour = components.Armour;
-import Weapon = components.Weapon;
-import * as _ from "lodash";
-
-export class Robot {
-    name: string;
-    components: { Chassis; Armour; Weapon };
-    program: string;
-
-    constructor(name: string, chassis: Chassis, armour: Armour, weapon: Weapon, program: string) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Robot = void 0;
+const components = require("./RobotComponents.js");
+const _ = require("lodash");
+class Robot {
+    constructor(name, chassis, armour, weapon, program) {
         this.name = name;
         this.components = { Chassis: chassis, Armour: armour, Weapon: weapon };
         this.program = program;
     }
-
     validate() {
         //Component Checking
-        let baseChassis = components.chassis.find((c) => c.name === this.components.Chassis.Name);
+        var baseChassis = components.chassis.find((c) => c.name === this.components.Chassis.Name);
         if (baseChassis === undefined) {
             console.log("Chassis not found: " + this.components.Chassis.Name);
             return false;
@@ -29,8 +23,7 @@ export class Robot {
                 JSON.stringify(this.components.Chassis));
             return false;
         }
-
-        let baseArmour = components.armours.find((a) => a.name === this.components.Armour.Name);
+        var baseArmour = components.armours.find((a) => a.name === this.components.Armour.Name);
         if (baseArmour === undefined) {
             console.log("Armour not found: " + this.components.Armour.Name);
             return false;
@@ -42,8 +35,7 @@ export class Robot {
                 JSON.stringify(this.components.Armour));
             return false;
         }
-
-        let baseWeapon = components.weapons.find((c) => c.name === this.components.Weapon.Name);
+        var baseWeapon = components.weapons.find((c) => c.name === this.components.Weapon.Name);
         if (baseWeapon === undefined) {
             console.log("Weapon not found: " + this.components.Weapon.Name);
             return false;
@@ -55,7 +47,8 @@ export class Robot {
                 JSON.stringify(this.components.Weapon));
             return false;
         }
-
         return true;
     }
 }
+exports.Robot = Robot;
+//# sourceMappingURL=Robot.js.map

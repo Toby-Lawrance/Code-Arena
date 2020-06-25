@@ -65,15 +65,34 @@ const server = app.listen(app.get('port'), () => {
 
 //Testing
 import { Robot } from "./Robot";
-import { BattleRobot } from "./BattleRobot";
+import { Bout } from "./Bout";
 import * as components from "./RobotComponents";
 //var Robot = require("./Robot.js");
 //var BattleRobotTest = require("./BattleRobot.js");
 //var components = require("./RobotComponents.js");
 
-var rob = new Robot("robo", components.chassis.find((c) => c.name == "Rounded"), components.armours.find((c) => c.name == "Rounded"), components.weapons.find((c) => c.name == "Medium"), `let x = 0; function main() {x=x+1;log(x);Robot.move(5*x);}`);
-var brob = new BattleRobot(rob);
-brob.runTick();
-brob.runTick();
-brob.runTick();
-console.log(JSON.stringify(brob));
+const betterScript = `
+let time = 0; 
+function main() 
+{
+    time++;
+    log(time);
+    for(let other in Others) {
+        if(other.teamId !== Robot.teamId) {
+            let headingDifference = 
+        }
+    }
+    Robot.move(5*x);
+}
+`;
+
+const rob = new Robot("robo", components.chassis.find((c) => c.name == "Rounded"), components.armours.find((c) => c.name == "Rounded"), components.weapons.find((c) => c.name == "Medium"), betterScript);
+const rob2 = new Robot("robo2", components.chassis.find((c) => c.name == "Rounded"), components.armours.find((c) => c.name == "Rounded"), components.weapons.find((c) => c.name == "Medium"), betterScript);
+let contestants:[Robot[]];
+contestants.push([rob]);
+contestants.push([rob2]);
+const battle = new Bout(contestants);
+battle.runTick();
+battle.runTick();
+battle.runTick();
+console.log(battle.toString());
